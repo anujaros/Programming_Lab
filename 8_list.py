@@ -1,4 +1,4 @@
-# list positive of positive integers
+# list of positive integers
 a = input("enter the numbers")
 a = a.split()   #a = list(map(int,a))
 pl=list()

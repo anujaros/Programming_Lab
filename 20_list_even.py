@@ -1,3 +1,4 @@
+#list with even numbers removed
 li = input("Enter any integers:")
 li = li.split()
 li = [int(x) for x in li]

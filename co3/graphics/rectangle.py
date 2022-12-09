@@ -1,5 +1,5 @@
-def area(l,b):
+def r_area(l,b):
     return l*b
 
-def perimeter(l,b):
+def r_perimeter(l,b):
     return 2*(l+b)

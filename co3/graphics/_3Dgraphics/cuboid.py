@@ -5,5 +5,5 @@ def lateral_s_area(l,w,h):
 def total_s_area(l,w,h):
     return 2*(l*w +w*h +l*h)
 
-def volume(l,w,h):
+def cuboid_volume(l,w,h):
     return l*w*h

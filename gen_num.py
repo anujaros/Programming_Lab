@@ -1,22 +1,19 @@
-from math import sqrt
+def perfect_sqr(n):
+    if int(n**0.5) == n**0.5:
+        return True
 def even(n):
-        string=str(n)
-        for digit in string:
-                if digit in '13579':
-                        return False
-                return True
-def square(n):
-        a=sqrt(n)
-        b=int(sqrt(n))
-        if (a==b):
-                return True
-        else:
-                return False
-lower=int(input("Enter 4-digit no. as The Lower limit: "))
-upper=int(input("Enter 4-digit no. as The Upper limit: "))
-if (len(str(lower))!=4 and len(str(upper))!=4):
-        print("Invalid!")
+    sn =str(n) ; q=''
+    for e in sn:
+        if int(e)%2 ==0:
+            q+= e
+    if len(q)==len(sn):
+        return True
+
+x = int(input("Enter the lower limit:"))
+y = int(input("Enter the upper limit:"))
+if len(str(x))== len(str(y)) == 4:
+    for i in range(x,y+1):
+        if perfect_sqr(i)== True and even(i)== True:
+            print(i)
 else:
-        for i in range(lower,upper):
-                if even(i) and square(i):
-                        print(i)
+    print("Invalid Entry; Inputs must be 4 Digit No.")

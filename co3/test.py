@@ -1,12 +1,13 @@
 import graphics as gp
+from graphics import r_area, r_perimeter
 from graphics._3Dgraphics import *
 a= gp.circle_area(10) ; p = gp.circle_perimeter(10)
 
 print("Calling from graphics package:\nArea of circle:",a)
 print("Perimeter of circle:",p)
 
-print("Area of rectangle:",gp.r_area(5,10))
-print("Perimeter of rectangle:",gp.r_area(5,10),"\n")
+print("Area of rectangle:",r_area(5,10))
+print("Perimeter of rectangle:",r_perimeter(5,10),"\n")
 
 
 print("Calling from _3Dgraphics Subpackage:\nArea of SPhere:",surface_area(5))

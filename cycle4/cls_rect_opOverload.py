@@ -19,7 +19,7 @@ r1 = Rectangle(int(input("enter the length:")),int(input("enter the width:")))
 
 r2 = Rectangle(int(input("enter the length:")),int(input("enter the width:")))
                
-if r1.area() < r2.area():
+if r1< r2:
     print("area of second rectangle is greater")
 else:
    print("Area of first rectangle is greater")
